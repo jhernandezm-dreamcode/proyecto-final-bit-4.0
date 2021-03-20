@@ -90,7 +90,6 @@
   </div>
 </div>
 <div class="container-fluid mt--7">
-  
   <div class="d-flex justify-content-center mt-5">
     <div class="col-xl-8 mb-5 mb-xl-0">
       <div class="card shadow">
@@ -114,15 +113,15 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">Jorge Arturo</th>
-                <td>Hernandez</td>
-                <td>25</td>
+              <tr *ngFor="let user of users">
+                <th scope="row">{{ user.name }}</th>
+                <td>{{ user.lastname }}</td>
+                <td>{{ user.age }}</td>
                 <td>
-                  Pendiente
+                  {{ user.survayStatuts }}
                 </td>
                 <td>
-                    <a href="/">Ver detalle</a>
+                    <button type="button" class="btn btn-primary" (click)="goToInfoUsuario(user)">Ver detalle</button>
                 </td>
               </tr>
             </tbody>

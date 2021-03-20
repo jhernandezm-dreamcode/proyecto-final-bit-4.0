@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 firebase.initializeApp(environment.firebaseConfig);
 
 @NgModule({
@@ -21,6 +22,7 @@ firebase.initializeApp(environment.firebaseConfig);
     DashboardComponent,
     FooterComponent,
     NavbarComponent,
+    UserDetailComponent,
   ],
   imports: [
     BrowserModule,
