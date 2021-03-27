@@ -2,8 +2,8 @@
 <section class="p-5">
   <h4 class="mb-3"><strong> Información del usuario</strong></h4>
   <form class="overflow-auto">
-    <section>
-      <p class="d-flex justify-content-center">
+    <section class="mb-5">
+      <p class="d-flex justify-content-center mt-3">
         <strong> INSPECCION Y EVALUCION DE PUESTO DE TRABAJO</strong>
       </p>
       <div class="form-row">
@@ -101,14 +101,16 @@
           />
         </div>
         <div class="form-group col-md-6">
-          <label for="inputPassword4"><strong> Nombre y teléfono de persona de contacto </strong></label>
+          <label for="inputPassword4"
+            ><strong> Nombre y teléfono de persona de contacto </strong></label
+          >
           <input
             type="password"
             class="form-control"
             id="inputPassword4"
             placeholder="Contacto"
           />
-        </div>     
+        </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -128,44 +130,78 @@
             id="inputPassword4"
             placeholder="Antigüedad cargo"
           />
-        </div>     
+        </div>
       </div>
       <div class="form-group">
-        <label for="inputAddress"><strong>Antecedentes Osteomusculares</strong></label>
+        <label for="inputAddress"
+          ><strong>Antecedentes Osteomusculares</strong></label
+        >
         <input type="text" class="form-control" id="inputAddress" />
       </div>
       <div class="form-group">
-        <label for="inputAddress"><strong>Ubicación exacta donde está ubicado el puesto de trabajo</strong></label>
+        <label for="inputAddress"
+          ><strong
+            >Ubicación exacta donde está ubicado el puesto de trabajo</strong
+          ></label
+        >
         <input type="text" class="form-control" id="inputAddress" />
       </div>
       <div class="form-group">
-        <label for="inputAddress"><strong>Responsable de la evaluación</strong></label>
+        <label for="inputAddress"
+          ><strong>Responsable de la evaluación</strong></label
+        >
         <input type="text" class="form-control" id="inputAddress" />
       </div>
-
-
-
+    </section>
+    <section class="mt-2">
+      <p class="d-flex justify-content-center mb-3">
+        <strong>REPORTE DE SINTOMATOLOGIA</strong>
+      </p>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="inputEmail4"
-            >Se observa posición forzada a nivel del cuello en flexión,
-            extensión o rotación.</label
-          >
+        <div class="form-group col-md-6">
+          <label for="inputEmail4"><strong>Alergias</strong> </label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Alergias"
+          />
         </div>
         <div class="form-group col-md-6">
-          <mat-slide-toggle
-            class="example-margin"
-            [color]=""
-            [checked]=""
-            [disabled]="false"
+          <label for="inputPassword4"
+            ><strong>Alergico a Medicamentos</strong></label
           >
-            No/Si
-          </mat-slide-toggle>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword4"
+            placeholder=""
+          />
         </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress"><strong>Jornada laboral</strong></label>
+        <input type="text" class="form-control" id="inputAddress" />
       </div>
     </section>
   </form>
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4"
+        >Se observa posición forzada a nivel del cuello en flexión, extensión o
+        rotación.</label
+      >
+    </div>
+    <div class="form-group col-md-6">
+      <mat-slide-toggle
+        class="example-margin"
+        [color]=""
+        [checked]=""
+        [disabled]="false"
+      >
+        No/Si
+      </mat-slide-toggle>
+    </div>
+  </div>
 </section>
-
-
-
