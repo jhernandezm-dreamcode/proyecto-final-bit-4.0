@@ -3,7 +3,9 @@
   <h4 class="mb-3">Información del usuario</h4>
   <form>
     <section>
-      <p class="d-flex justify-content-center">INSPECCION Y EVALUCION DE PUESTO DE TRABAJO</p>
+      <p class="d-flex justify-content-center">
+        INSPECCION Y EVALUCION DE PUESTO DE TRABAJO
+      </p>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
@@ -24,9 +26,24 @@
           />
         </div>
       </div>
-      <section class="example-section">
-        
-      </section>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputEmail4"
+            >Se observa posición forzada a nivel del cuello en flexión,
+            extensión o rotación.</label
+          >
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+          No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
     </section>
   </form>
 </section>

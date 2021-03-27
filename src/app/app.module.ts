@@ -13,7 +13,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
-
+import { MaterialModule } from './material.module';
 firebase.initializeApp(environment.firebaseConfig);
 
 @NgModule({
@@ -32,7 +32,8 @@ firebase.initializeApp(environment.firebaseConfig);
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
