@@ -13,6 +13,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
+
 firebase.initializeApp(environment.firebaseConfig);
 
 @NgModule({
@@ -23,6 +24,7 @@ firebase.initializeApp(environment.firebaseConfig);
     FooterComponent,
     NavbarComponent,
     UserDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
