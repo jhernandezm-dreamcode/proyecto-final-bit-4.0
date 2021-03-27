@@ -10,43 +10,49 @@
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Empresa</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Empresa"
+            value="{{ user.company }}"
           />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4"><strong> ARL </strong></label>
           <input
-            type="password"
+            type="text"
             class="form-control"
             id="inputPassword4"
             placeholder="ARL"
+            value="{{ user.arl }}"
           />
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress"><strong>Nombre</strong></label>
-        <input type="text" class="form-control" id="inputAddress" />
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          value="{{ getFullName() }}"
+        />
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Cedula</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Cedula"
+            value="{{ user.documentNumber }}"
           />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4"><strong> Área </strong></label>
           <input
-            type="password"
             class="form-control"
             id="inputPassword4"
             placeholder="Área"
+            value="{{ user.area }}"
           />
         </div>
       </div>
@@ -54,19 +60,19 @@
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Dirección</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Dirección"
+            value="{{ user.address }}"
           />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4"><strong> Teléfono </strong></label>
           <input
-            type="password"
             class="form-control"
             id="inputPassword4"
             placeholder="Teléfono"
+            value="{{ user.phoneNumber }}"
           />
         </div>
       </div>
@@ -74,19 +80,19 @@
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Cargo</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Cargo"
+            value="{{ user.charge }}"
           />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4"><strong> Edad </strong></label>
           <input
-            type="password"
             class="form-control"
             id="inputPassword4"
             placeholder="Edad"
+            value="{{ user.age }}"
           />
         </div>
       </div>
@@ -94,10 +100,10 @@
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Genero</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Genero"
+            value="{{ user.gender }}"
           />
         </div>
         <div class="form-group col-md-6">
@@ -105,7 +111,7 @@
             ><strong> Nombre y teléfono de persona de contacto </strong></label
           >
           <input
-            type="password"
+            type="text"
             class="form-control"
             id="inputPassword4"
             placeholder="Contacto"
@@ -116,7 +122,6 @@
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Antigüedad empresa</strong> </label>
           <input
-            type="email"
             class="form-control"
             id="inputEmail4"
             placeholder="Antigüedad empresa"
@@ -125,7 +130,7 @@
         <div class="form-group col-md-6">
           <label for="inputPassword4"><strong>Antigüedad cargo</strong></label>
           <input
-            type="password"
+            type="text"
             class="form-control"
             id="inputPassword4"
             placeholder="Antigüedad cargo"
@@ -160,19 +165,14 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4"><strong>Alergias</strong> </label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail4"
-            placeholder="Alergias"
-          />
+          <input class="form-control" id="inputEmail4" placeholder="Alergias" />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4"
             ><strong>Alergico a Medicamentos</strong></label
           >
           <input
-            type="password"
+            type="text"
             class="form-control"
             id="inputPassword4"
             placeholder=""
@@ -485,7 +485,8 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >Los elementos de trabajo se encuentran fuera del alcance normal en posición horizontal o vertical (alcance mínimo y máximo).</label
+            >Los elementos de trabajo se encuentran fuera del alcance normal en
+            posición horizontal o vertical (alcance mínimo y máximo).</label
           >
         </div>
         <div class="form-group col-md-6">
@@ -502,8 +503,9 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >La silla es ergonómica o cumple con las condiciones para tener una buena postura </label
-          >
+            >La silla es ergonómica o cumple con las condiciones para tener una
+            buena postura
+          </label>
         </div>
         <div class="form-group col-md-6">
           <mat-slide-toggle
@@ -553,7 +555,8 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >El espacio debajo del escritorio es reducido para el movimiento de miembros inferiores.</label
+            >El espacio debajo del escritorio es reducido para el movimiento de
+            miembros inferiores.</label
           >
         </div>
         <div class="form-group col-md-6">
@@ -570,7 +573,8 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >La pantalla del computador está muy cerca de los ojos (menos de 50 cm).</label
+            >La pantalla del computador está muy cerca de los ojos (menos de 50
+            cm).</label
           >
         </div>
         <div class="form-group col-md-6">
@@ -587,7 +591,8 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >La altura de la pantalla se encuentra por debajo de la línea perpendicular de los ojos del trabajador.</label
+            >La altura de la pantalla se encuentra por debajo de la línea
+            perpendicular de los ojos del trabajador.</label
           >
         </div>
         <div class="form-group col-md-6">
@@ -604,7 +609,8 @@
       <div class="form-row">
         <div class="form-group col-md-5">
           <label for="inputEmail4"
-            >Se observa que el monitor, teclado y/o mouse carecen de mantenimiento</label
+            >Se observa que el monitor, teclado y/o mouse carecen de
+            mantenimiento</label
           >
         </div>
         <div class="form-group col-md-6">
@@ -620,132 +626,176 @@
       </div>
     </section>
     <section class="mt-2 mb-5">
-        <p class="d-flex justify-content-center mb-4">
-            <strong>ASPECTO AMBIENTAL</strong>
-          </p>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >Existen sombras por falta de iluminación en el área de trabajo</label
+      <p class="d-flex justify-content-center mb-4">
+        <strong>ASPECTO AMBIENTAL</strong>
+      </p>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4"
+            >Existen sombras por falta de iluminación en el área de
+            trabajo</label
+          >
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4"
+            >Existen deslumbramientos en el área de trabajo natural insuficiente
+            cortinas
+          </label>
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4">Hay ruido excesivo que es molesto</label>
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4">Hay ruido excesivo que es molesto</label>
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4"
+            >El trabajador está expuesto a sustancias químicas</label
+          >
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4"
+            >El trabajador está expuesto a agentes biológicos</label
+          >
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputEmail4"
+            >Se observan cables sueltos sin canalizar en pasillos de circulación
+            o acceso al puesto de trabajo
+          </label>
+        </div>
+        <div class="form-group col-md-6">
+          <mat-slide-toggle
+            class="example-margin"
+            [color]=""
+            [checked]=""
+            [disabled]="false"
+          >
+            No/Si
+          </mat-slide-toggle>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Información</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
               >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
+            <div class="modal-body">
+              Su información se ha diligenciado con exito
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+                (click)="saveInformation()"
               >
-                No/Si
-              </mat-slide-toggle>
+                Aceptar
+              </button>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >Existen deslumbramientos en el área de trabajo natural insuficiente cortinas </label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >Hay ruido excesivo que es molesto</label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >Hay ruido excesivo que es molesto</label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >El trabajador está expuesto a sustancias químicas</label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >El trabajador está expuesto a agentes biológicos</label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputEmail4"
-                >Se observan cables sueltos sin canalizar en pasillos de circulación o acceso al puesto de trabajo
-                </label
-              >
-            </div>
-            <div class="form-group col-md-6">
-              <mat-slide-toggle
-                class="example-margin"
-                [color]=""
-                [checked]=""
-                [disabled]="false"
-              >
-                No/Si
-              </mat-slide-toggle>
-            </div>
-          </div>
+        </div>
+      </div>
     </section>
     <section class="d-flex justify-content-center">
-        <button class="btn btn-primary" type="submit">Guardar</button>
+      <button
+        class="btn btn-primary"
+        type="submit"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Guardar
+      </button>
     </section>
   </form>
 </section>
