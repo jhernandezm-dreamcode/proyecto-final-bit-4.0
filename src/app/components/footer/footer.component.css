@@ -1,5 +1,5 @@
 .testFooter {
-    position: absolute !important;
+    position: inherit;
     bottom: 0 !important;
     width: 100%;
   }

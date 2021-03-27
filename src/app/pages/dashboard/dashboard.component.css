@@ -15,6 +15,12 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+.test-2{
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;  
+}
 :root
 {
     --blue: #5e72e4;
